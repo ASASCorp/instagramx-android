@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="auth_script">(function checkUsername() {
+  let viewer = window._sharedData.config
+  if (viewer.viewer != null){
+    var obj = {
+      csrftoken: viewer.csrf_token,
+      username : viewer.viewer.username,
+      id: viewer.viewer.id,
+      full_name: viewer.viewer.full_name,
+      profile_pic_url: viewer.viewer.profile_pic_url_hd,
+      is_private: viewer.viewer.is_private,
+      bio: viewer.viewer.biography
+    }
+    return obj;
+  }
+  else {
+    return null;
+  }
+})()
+    </string>
+    <string name="login_title">Login with Instagram</string>
+</resources>
