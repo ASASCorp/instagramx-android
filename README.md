@@ -1,2 +1,2 @@
-# instagramx-android
+# InstagramX
 Unofficial Instagram API for android
